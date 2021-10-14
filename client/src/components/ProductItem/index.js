@@ -9,6 +9,14 @@ function ProductItem(item) {
 
   const [state, dispatch] = useStoreContext();
 
+  const {
+    image,
+    name,
+    _id,
+    price,
+    quantity
+  } = item;
+  
   const { cart } = state;
 
   const addToCart = () => {
@@ -32,13 +40,6 @@ function ProductItem(item) {
     }
   }
 
-  const {
-    image,
-    name,
-    _id,
-    price,
-    quantity
-  } = item;
 
   return (
     <div className="card px-1 py-1">
