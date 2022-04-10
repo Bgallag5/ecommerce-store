@@ -44,7 +44,7 @@ function ProductList() {
     return state.products.filter(product => product.category._id === currentCategory)
   }
 
-
+console.log(currentCategory);
   return (
     <div className="my-2">
       <h2>Our Products:</h2>

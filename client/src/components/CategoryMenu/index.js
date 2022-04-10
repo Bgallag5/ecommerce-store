@@ -31,12 +31,14 @@ function CategoryMenu() {
   }, [categoryData, loading, dispatch]);
 
 const handleClick = (id) => {
+  console.log(id);
   dispatch({
     type: UPDATE_CURRENT_CATEGORY,
     curentCategory: id,
   })
 }
 
+console.log(state.curentCategory);
   return (
     <div>
       <h2>Choose a Category:</h2>
